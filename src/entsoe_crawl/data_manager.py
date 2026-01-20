@@ -10,7 +10,7 @@ from config import (
     GENERATION_TYPES, DATA_DIRECTORIES, FETCH_CONFIG,
     FORECAST_SUPPORTED_ZONES
 )
-from data_fetcher import DataFetcher
+from electricmap_crawl.data_fetcher import DataFetcher
 from utils import save_series, save_dataframe, file_exists, get_file_size, ensure_dir
 
 # Configure logging
