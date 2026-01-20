@@ -16,7 +16,7 @@ START = pd.Timestamp("2024-01-01", tz="UTC")
 END = pd.Timestamp("2024-12-31", tz="UTC")
 
 # Quốc gia / Bidding zone
-COUNTRY_CODE = "DE_LU"  # Germany (Germany-Luxembourg bidding zone)
+COUNTRY_CODE = "FR"  # France
 
 # Power System Resource (PSR) codes – ENTSO-E standard
 PSR_TYPES = {
@@ -120,6 +120,7 @@ GENERATION_TYPES = {
     "hydro_reservoir": "B12",
     "hydro_pumped_generation": "B10",
     "biomass": "B01",
+    "nuclear": "B14",
 }
 
 # Các loại dữ liệu forecast

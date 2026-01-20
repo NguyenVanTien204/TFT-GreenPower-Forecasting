@@ -225,7 +225,7 @@ class DataManager:
                 self.fetch_report["capacity/installed_capacity"] = "FAILED"
 
         # Unavailable capacity (optional - disabled by default)
-        if FETCH_CONFIG.get("unavailability", False):
+        if FETCH_CONFIG.get("unavailability", True):
             file_path = os.path.join(output_dir, "unavailable_capacity.csv")
 
             if not self.force_fetch and self.check_data_exists(file_path):
