@@ -8,9 +8,10 @@
 
 Dự án này là mã nguồn chính thức cho bài báo nghiên cứu: **"TFT-Based Cross-Country Transfer Learning with Economic Covariates for Electricity Generation Forecasting"**.
 
-Nghiên cứu tập trung vào việc dự báo sản lượng điện tại Việt Nam bằng cách sử dụng mô hình **Temporal Fusion Transformer (TFT)** kết hợp với phương pháp **Transfer Learning** (Học chuyển giao). Để cải thiện độ chính xác, mô hình tích hợp nhiều nguồn dữ liệu đa dạng bao gồm:
-- Tải điện (Electricity Load)
-- Dữ liệu thời tiết (Weather Data)
+Nghiên cứu tập trung vào việc dự báo **sản lượng điện phát ra (Electricity Generation)** phân theo từng loại nguồn năng lượng tại Việt Nam bằng cách sử dụng mô hình **Temporal Fusion Transformer (TFT)** kết hợp với phương pháp **Transfer Learning** (Học chuyển giao). 
+
+Để cải thiện độ chính xác dự báo cho các nguồn phát điện, mô hình sử dụng các biến đầu vào (covariates) đa dạng bao gồm:
+- Dữ liệu thời tiết (Weather Data: nhiệt độ, lượng mưa, độ ẩm, bức xạ mặt trời...)
 - Các chỉ số kinh tế vĩ mô (Economic Covariates)
 
 Bằng cách pre-train mô hình trên dữ liệu từ nhiều quốc gia khác nhau và fine-tune trên dữ liệu đặc thù của Việt Nam, mô hình đạt được hiệu năng vượt trội trong việc nắm bắt các xu hướng và biến động dài hạn.
@@ -22,7 +23,7 @@ Bằng cách pre-train mô hình trên dữ liệu từ nhiều quốc gia khác
 ```mermaid
 graph TD
     subgraph Data_Prep ["Thu thập & Tiền xử lý dữ liệu (Data Preparation)"]
-        A1[Dữ liệu Tải điện] --> B1[full_vietnam_monthly_merger.csv]
+        A1[Dữ liệu Sản lượng điện] --> B1[full_vietnam_monthly_merger.csv]
         A2[Dữ liệu Thời tiết] --> B1
         A3[Chỉ số Kinh tế] --> B1
         
