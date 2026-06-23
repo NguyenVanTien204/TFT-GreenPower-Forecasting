@@ -11,8 +11,6 @@
 ### Điện (electricmap_data)
 *(Nguồn chính: ElectricMap API - https://app.electricitymaps.com)*
 
->***Lưu ý: Dữ liệu này được tổ chức ElectricMap cung cấp và là dữ liệu mô phỏng dựa trên các mô hình nội bộ của họ, không phải dữ liệu thực tế đo đạc.***
-
 - `load_data_VN_monthly.csv`: tải điện Việt Nam tổng hợp theo tháng.
 - `load_data_VN_daily.csv`: tải điện Việt Nam theo ngày.
 - `load_data_VN.csv`: tải điện Việt Nam chi tiết (theo giờ).
