@@ -3,6 +3,7 @@ data/raw/entsoe_data/
 lightning_logs/
 checkpoint/
 scripts/
+.kiro/
 
 
 # Byte-compiled / optimized / DLL files

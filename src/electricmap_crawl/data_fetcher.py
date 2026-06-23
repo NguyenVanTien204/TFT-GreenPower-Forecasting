@@ -1,3 +1,10 @@
+"""
+Module: data_fetcher
+Description: Script to fetch historical electricity load data from Electricity Maps API v3.
+Features: 
+- Supports chunked API requests to avoid rate limits.
+- Validates real vs estimated data.
+"""
 import requests
 import pandas as pd
 from datetime import datetime, timedelta
