@@ -86,7 +86,6 @@ graph TD
 ```bash
 pip install -r requirements.txt
 ```
-*(Nếu chưa có `requirements.txt`, hãy đảm bảo cài đặt `pytorch`, `pytorch-lightning`, `pytorch-forecasting`, `pandas`, `numpy`, `matplotlib`, `scikit-learn`)*
 
 ### 2. Các bước thực hiện (Execution Steps)
 
