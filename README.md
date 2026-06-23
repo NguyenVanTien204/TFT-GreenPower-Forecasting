@@ -21,7 +21,7 @@ Bằng cách pre-train mô hình trên dữ liệu từ nhiều quốc gia khác
 
 ```mermaid
 graph TD
-    subgraph Thu thập & Tiền xử lý dữ liệu (Data Preparation)
+    subgraph Data_Prep ["Thu thập & Tiền xử lý dữ liệu (Data Preparation)"]
         A1[Dữ liệu Tải điện] --> B1[full_vietnam_monthly_merger.csv]
         A2[Dữ liệu Thời tiết] --> B1
         A3[Chỉ số Kinh tế] --> B1
@@ -35,7 +35,7 @@ graph TD
         C2 --> D2[tft_premodel_dataset_EDA.csv]
     end
 
-    subgraph Quá trình Huấn luyện Mô hình (Model Training)
+    subgraph Model_Training ["Quá trình Huấn luyện Mô hình (Model Training)"]
         D2 -->|Pre-training| E1[trainTFT_v3.ipynb]
         E1 --> F1[TFT Global Pre-trained Model]
         
